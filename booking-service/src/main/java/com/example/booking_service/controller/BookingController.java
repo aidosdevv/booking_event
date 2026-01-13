@@ -18,7 +18,6 @@ public class BookingController {
 
     @PostMapping(consumes = "application/json",produces = "application/json", path = "/booking")
     public BookingResponse createBooking(@RequestBody BookingRequest bookingRequest){
-        System.out.print(bookingRequest+">>>>>>>>");
         return bookingService.createBooking(bookingRequest);
     }
 }

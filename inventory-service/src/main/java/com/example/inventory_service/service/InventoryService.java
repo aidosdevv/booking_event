@@ -48,7 +48,8 @@ public class InventoryService {
                 .event(event.getName())
                 .capacity(event.getLeftCapacity())
                 .venue(event.getVenue())
-                .price(event.getTicketPrice())
+                .ticketPrice(event.getTicketPrice())
+                .eventId(event.getId())
                 .build();
 
     }
